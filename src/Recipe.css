@@ -1,0 +1,28 @@
+.recipeimg{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.recipename{
+    max-width: 200px;
+    text-align: center;
+    margin: 8px 0px;
+    padding: 3px;
+    background-color: rgb(56, 137, 230);
+    border-radius: 5px;
+    color: aliceblue;
+    
+
+}
+.recipetile{
+    cursor: pointer;
+}
+.recipeimg:hover{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition-duration: 2s;
+    box-shadow: 0 4px 8px 0 rgb(129, 185, 250), 0 4px 20px 0 rgba(56, 137, 230);
+}
