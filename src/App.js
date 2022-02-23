@@ -11,8 +11,9 @@ function App() {
  const [recipes,setrecipes] =useState([]);
  const [loading,setLoading]=useState(true);
 
-  const YOUR_APP_ID = "e0993b46";
-const YOUR_APP_KEY ="7166a53ce4de53221362cb9e07ad7a4d";
+  const YOUR_APP_ID = process.env.REACT_APP_YOUR_APP_ID;
+const YOUR_APP_KEY =process.env.REACT_APP_YOUR_APP_KEY;
+console.log(YOUR_APP_ID);
 
   const Url = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&health=alcohol-free `;
 
